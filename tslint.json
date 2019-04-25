@@ -1,0 +1,7 @@
+{
+  "extends": ["tslint-react"],
+  "rules": {
+    "semicolon": [false, "always"],
+    "jsx-boolean-value": false
+  }
+}

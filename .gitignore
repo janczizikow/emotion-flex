@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+package-lock.json
+
+# builds
+build
+dist
+
+# IDE
+.idea
+.vscode
+
+# misc
+.DS_Store
+.env*
+*.log

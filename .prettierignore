@@ -1,0 +1,8 @@
+package.json
+tsconfig.json
+node_modules/
+coverage/
+dist/
+build/
+lib/
+*.d.ts

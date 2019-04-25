@@ -1,0 +1,100 @@
+{
+  "name": "emotion-flex",
+  "version": "0.0.1-dev",
+  "author": "Jan Czizikow <jan.czizikow@gmail.com> (https://www.janczizikow.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janczizikow/emotion-flex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/janczizikow/emotion-flex/issues"
+  },
+  "homepage": "https://github.com/janczizikow/emotion-flex#readme",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@emotion/core": "^10.0.0",
+    "@emotion/styled": "^10.0.0",
+    "react": ">=16.3.0"
+  },
+  "dependencies": {
+    "facepaint": "^1.2.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "yarn test--watch",
+    "test:coverage": "yarn test --coverage",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check --watch",
+    "prebuild": "rimraf dist",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "build": "yarn build:types && yarn build:js",
+    "watch": "rollup -c -w",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.4.0",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.0",
+    "@babel/preset-env": "7.4.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "@types/facepaint": "^1.2.0",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "babel-plugin-annotate-pure-calls": "^0.4.0",
+    "babel-plugin-emotion": "^10.0.9",
+    "husky": "^2.1.0",
+    "jest": "^24.7.1",
+    "jest-emotion": "^10.0.10",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-size-snapshot": "^0.8.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "3.3.3"
+  },
+  "lint-staged": {
+    "**/**.{ts,tsx}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "snapshotSerializers": [
+      "jest-emotion"
+    ]
+  }
+}

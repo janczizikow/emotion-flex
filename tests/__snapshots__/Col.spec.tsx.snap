@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Col /> renders with default styles 1`] = `
+.emotion-0 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  max-width: 100%;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`<Col /> renders with responsive styles 1`] = `
+.emotion-0 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width:576px) {
+  .emotion-0 {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-0 {
+    -webkit-flex: 1 0 33.333333%;
+    -ms-flex: 1 0 33.333333%;
+    flex: 1 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (min-width:992px) {
+  .emotion-0 {
+    -webkit-flex: 1 0 25%;
+    -ms-flex: 1 0 25%;
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-0 {
+    -webkit-flex: 1 0 8.333333%;
+    -ms-flex: 1 0 8.333333%;
+    flex: 1 0 8.333333%;
+    max-width: 8.333333%;
+  }
+}
+
+<div
+  className="emotion-0"
+/>
+`;

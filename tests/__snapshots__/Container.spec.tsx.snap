@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> renders with default fluid styles 1`] = `
+.emotion-0 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`<Container /> renders with default styles 1`] = `
+.emotion-0 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+@media (min-width:576px) {
+  .emotion-0 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-0 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .emotion-0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-0 {
+    max-width: 1140px;
+  }
+}
+
+<div
+  className="emotion-0"
+/>
+`;
