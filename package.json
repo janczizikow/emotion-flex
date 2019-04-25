@@ -28,7 +28,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test--watch",
-    "test:coverage": "yarn test --coverage",
+    "test:coverage": "cross-env CI=1 yarn test --coverage",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check --watch",
     "prebuild": "rimraf dist",
@@ -56,6 +56,7 @@
     "@types/react-test-renderer": "^16.8.1",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "babel-plugin-emotion": "^10.0.9",
+    "cross-env": "^5.2.0",
     "husky": "^2.1.0",
     "jest": "^24.7.1",
     "jest-emotion": "^10.0.10",

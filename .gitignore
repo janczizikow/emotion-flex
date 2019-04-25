@@ -5,6 +5,7 @@ package-lock.json
 # builds
 build
 dist
+coverage
 
 # IDE
 .idea
