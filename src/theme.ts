@@ -6,10 +6,10 @@ export interface Theme {
     xl: number;
   };
   maxWidths: {
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
+    sm: number;
+    md: number;
+    lg: number;
+    xl: number;
   };
   gutters: number;
 }
@@ -22,10 +22,10 @@ const defaultTheme = {
     xl: 1200,
   },
   maxWidths: {
-    sm: '540px',
-    md: '720px',
-    lg: '960px',
-    xl: '1140px',
+    sm: 540,
+    md: 720,
+    lg: 960,
+    xl: 1140,
   },
   gutters: 15,
 };
