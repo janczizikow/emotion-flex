@@ -1,5 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Container /> renders with custom styles when given a custom theme 1`] = `
+.emotion-0 {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-0 {
+    max-width: 576px;
+  }
+}
+
+@media (min-width:960px) {
+  .emotion-0 {
+    max-width: 768px;
+  }
+}
+
+@media (min-width:1280px) {
+  .emotion-0 {
+    max-width: 992px;
+  }
+}
+
+@media (min-width:1920px) {
+  .emotion-0 {
+    max-width: 1200px;
+  }
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
 exports[`<Container /> renders with default fluid styles 1`] = `
 .emotion-0 {
   padding-right: 15px;
