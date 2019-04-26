@@ -3,6 +3,9 @@ import styled from './styled';
 import { getTheme, getBreakpoints } from './utils';
 
 export interface ContainerProps {
+  /**
+   * Allow the Container to fill all of it's availble horizontal space.
+   */
   fluid?: boolean;
 }
 

@@ -11,21 +11,54 @@ type Order = ZeroToTwelve | 'first' | 'last';
 type Column = OneToTwelve;
 
 export interface ColProps {
+  /**
+   * Removes the padding around Column
+   */
   noGutters?: boolean;
+  /**
+   * The number of columns to offset on extra small devices
+   */
   xsOffset?: Offset;
   xsOrder?: Order;
+  /**
+   * The number of columns to span on extra small devices
+   */
   xs?: Column;
+  /**
+   * The number of columns to offset on small devices
+   */
   smOffset?: Offset;
   smOrder?: Order;
+  /**
+   * The number of columns to span on small devices
+   */
   sm?: Column;
+  /**
+   * The number of columns to offset on medium devices
+   */
   mdOffset?: Offset;
   mdOrder?: Order;
+  /**
+   * The number of columns to span on medium devices
+   */
   md?: Column;
+  /**
+   * The number of columns to offset on large devices
+   */
   lgOffset?: Offset;
   lgOrder?: Order;
+  /**
+   * The number of columns to span on large devices
+   */
   lg?: Column;
+  /**
+   * The number of columns to offset on extra large devices
+   */
   xlOffset?: Offset;
   xlOrder?: Order;
+  /**
+   * The number of columns to span on extra large devices
+   */
   xl?: Column;
 }
 

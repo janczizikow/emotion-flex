@@ -1,13 +1,11 @@
 import styled from './styled';
 import { getTheme } from './utils';
 
-type Align = 'start' | 'center' | 'end';
-type Justify = 'start' | 'center' | 'end' | 'between' | 'around';
-
 export interface RowProps {
+  /**
+   * Removes Row's negative margins.
+   */
   noGutters?: boolean;
-  alignItems?: Align; // TODO: add align-items
-  justifyContent?: Justify; // TODO: add justify-content
 }
 
 export const Row = styled.div<RowProps>`
