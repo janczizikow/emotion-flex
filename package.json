@@ -1,7 +1,15 @@
 {
   "name": "emotion-flex",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "author": "Jan Czizikow <jan.czizikow@gmail.com> (https://www.janczizikow.com/)",
+  "description": "Fully customizable responsive flexbox grid system, made with emotion",
+  "keywords": [
+    "react",
+    "grid",
+    "flexbox",
+    "emotion",
+    "styled"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/janczizikow/emotion-flex.git"
@@ -35,9 +43,10 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "rollup -c",
     "build": "yarn build:types && yarn build:js",
+    "prepublishOnly": "yarn build",
     "watch": "rollup -c -w",
     "format": "prettier --write 'src/**/*.{ts,tsx}'",
-    "precommit": "lint-staged"
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -56,8 +65,10 @@
     "@types/react-test-renderer": "^16.8.1",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "babel-plugin-emotion": "^10.0.9",
+    "commitizen": "^3.1.1",
     "coveralls": "^3.0.3",
     "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "^2.1.0",
     "emotion-theming": "^10.0.10",
     "husky": "^2.1.0",
     "jest": "^24.7.1",
@@ -73,6 +84,7 @@
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-size-snapshot": "^0.8.0",
+    "semantic-release": "^15.13.12",
     "ts-jest": "^24.0.2",
     "tslint": "^5.16.0",
     "tslint-react": "^4.0.0",
@@ -83,6 +95,17 @@
       "prettier --config .prettierrc --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "jest": {
     "transform": {
