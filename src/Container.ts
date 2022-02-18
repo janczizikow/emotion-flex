@@ -1,5 +1,5 @@
 import facepaint from 'facepaint';
-import styled from './styled';
+import styled from '@emotion/styled';
 import { getTheme, getBreakpoints } from './utils';
 
 export interface ContainerProps {

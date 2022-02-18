@@ -12,7 +12,7 @@ exports[`<Col /> renders with custom styles when given a custom theme 1`] = `
   max-width: 100%;
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .emotion-0 {
     -webkit-flex: 1 0 50%;
     -ms-flex: 1 0 50%;
@@ -21,7 +21,7 @@ exports[`<Col /> renders with custom styles when given a custom theme 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width: 960px) {
   .emotion-0 {
     -webkit-flex: 1 0 33.333333%;
     -ms-flex: 1 0 33.333333%;
@@ -30,7 +30,7 @@ exports[`<Col /> renders with custom styles when given a custom theme 1`] = `
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .emotion-0 {
     -webkit-flex: 1 0 25%;
     -ms-flex: 1 0 25%;
@@ -39,7 +39,7 @@ exports[`<Col /> renders with custom styles when given a custom theme 1`] = `
   }
 }
 
-@media (min-width:1920px) {
+@media (min-width: 1920px) {
   .emotion-0 {
     -webkit-flex: 1 0 8.333333%;
     -ms-flex: 1 0 8.333333%;
@@ -100,25 +100,25 @@ exports[`<Col /> renders with offset styles when given a prop 1`] = `
   max-width: 100%;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
   .emotion-0 {
     margin-left: 50%;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .emotion-0 {
     margin-left: 33.333333%;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .emotion-0 {
     margin-left: 25%;
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-0 {
     margin-left: 8.333333%;
   }
@@ -144,7 +144,7 @@ exports[`<Col /> renders with order styles when given a prop 1`] = `
   order: 13;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
   .emotion-0 {
     -webkit-order: 6;
     -ms-flex-order: 6;
@@ -152,7 +152,7 @@ exports[`<Col /> renders with order styles when given a prop 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .emotion-0 {
     -webkit-order: 4;
     -ms-flex-order: 4;
@@ -160,7 +160,7 @@ exports[`<Col /> renders with order styles when given a prop 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .emotion-0 {
     -webkit-order: 3;
     -ms-flex-order: 3;
@@ -168,7 +168,7 @@ exports[`<Col /> renders with order styles when given a prop 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-0 {
     -webkit-order: -1;
     -ms-flex-order: -1;
@@ -193,7 +193,7 @@ exports[`<Col /> renders with responsive styles 1`] = `
   max-width: 100%;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
   .emotion-0 {
     -webkit-flex: 1 0 50%;
     -ms-flex: 1 0 50%;
@@ -202,7 +202,7 @@ exports[`<Col /> renders with responsive styles 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .emotion-0 {
     -webkit-flex: 1 0 33.333333%;
     -ms-flex: 1 0 33.333333%;
@@ -211,7 +211,7 @@ exports[`<Col /> renders with responsive styles 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .emotion-0 {
     -webkit-flex: 1 0 25%;
     -ms-flex: 1 0 25%;
@@ -220,7 +220,7 @@ exports[`<Col /> renders with responsive styles 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-0 {
     -webkit-flex: 1 0 8.333333%;
     -ms-flex: 1 0 8.333333%;
