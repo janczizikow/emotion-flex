@@ -1,4 +1,4 @@
-import styled from './styled';
+import styled from '@emotion/styled';
 import { getTheme } from './utils';
 
 export interface RowProps {

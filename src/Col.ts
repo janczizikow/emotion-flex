@@ -1,5 +1,5 @@
 import facepaint from 'facepaint';
-import styled from './styled';
+import styled from '@emotion/styled';
 import { isInteger, getTheme, getBreakpoints } from './utils';
 
 type TwoToEleven = 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;

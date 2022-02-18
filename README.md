@@ -13,12 +13,15 @@ Fully customizable responsive grid system build with [emotion](https://emotion.s
 
 ## Install
 
+> **⚠ WARNING**
+> For emotion 10 use v1.x.x of emotion-flex
+
 ```bash
-npm i --save emotion-flex @emotion/core @emotion/styled
+npm i --save emotion-flex @emotion/react @emotion/styled
 
 # or
 
-yarn add emotion-flex @emotion/core @emotion/styled
+yarn add emotion-flex @emotion/react @emotion/styled
 ```
 
 ## Usage
@@ -103,7 +106,7 @@ class Example extends Component {
 
 ```jsx
 import React, { Component } from 'react'
-import { ThemeProvider } from 'emotion-theming'
+import { ThemeProvider } from '@emotion/react'
 
 import { Container, Row, Col } from 'emotion-flex'
 
